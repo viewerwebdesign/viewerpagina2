@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: gray;
+}
+
+
+/* NAV */
+nav{
+  box-shadow: 1px 1px 10px gray;
+  
+}
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 500;
+  background-color: rgb(255, 255, 255);
+  top: 0.2%;
+  box-shadow: 1px 1px 10px gray;
+  
+}
+
+.navbar{
+  width: 10%;
+}
+
+.navbar-collapse{
+  display: flex;
+  justify-content: right;
+  
+  width: 10%;
+}
+.navbar-brand img{
+  width: 25vh;
+  height: 8vh;
+}
+
+.carousel-inner{
+  position: static;
+  height: 70vh;
+  margin-top: 3.8%;
+}
+.carousel-item img{
+  height: 70vh;
+}
+
+@media (min-width: 320px) and (max-width: 575px){
+
+  .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navbar-collapse{
+    display: flex;
+    justify-content: left;
+    
+    width: 10%;
+  }
+  .carousel-inner{
+    position: static;
+    height: 30vh;
+    margin-top: 7%;
+  }
+  .carousel-item img{
+    height: 30vh;
+  }
+
+
+}
